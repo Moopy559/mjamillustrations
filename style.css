@@ -2,24 +2,40 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-    background-image: url(images/header-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    margin: 0;
+@font-face {
+    font-family: blackout-2am;
+    src: url(Blackout-2am.ttf);
 }
 
+h1 {
+    font-family: blackout-2am;
+    font-size: 8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    /*background-image: url(images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    background-image: linear-gradient(to right, #ffb84c, #A459D1);
+    height: 100%;
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;;
+    text-align: center;justify-content: center;
+    align-items: center;
+    text-align: center;;
+}
+
+
 .gallery {
-    background-color: #FFB84C;
+    
 }
 
 .header {
-    
-    text-align: center;
-    padding-top: 36px;
-    padding-bottom: 36px;
     color: #F5EAEA;
 }
 
@@ -55,9 +71,9 @@ img:hover {
 
 button {
     padding: 0.5em;
-    background-color: #f5eaea;
-    border: none;
-    color: #ffb84c;
+    border: white solid 2px;
+    background-color: transparent;
+    color: white;
     font-size: medium;
     text-decoration: none;
     cursor: pointer;
