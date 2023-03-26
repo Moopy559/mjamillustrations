@@ -8,6 +8,9 @@
 
 <body>
 
+<!--MODEL-VIEWER SCRIPT-->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
 <!--HEADER-->
 
     <div class="header">
@@ -57,6 +60,14 @@
     <div>
         <img src="images/header-image.jpg" alt="Queen" style="width:650px">
     </div>
+
+<!--QUEEN GLB-->
+<model-viewer src="Queen.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>    
+</model-viewer>
+
 
 <!--ELDERS STATEMENT-->
 
